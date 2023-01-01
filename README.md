@@ -1,4 +1,4 @@
-# IPFS video plugin for Kodi
+# IPFS video plugin for Kodi  ***Crypticwizardry Kubo IPFS/IPNS added, IPLD support coming soon, need to configure Crypticwizardry IPFS API to support this application, otherwise working!***
 
 Plugin to browse and play video media from IPFS.
 
@@ -14,10 +14,25 @@ Currently the plugin is not part of any repository. You will have to upload a zi
 
 # Build from source
 
+To build the package from the source seen here, I used Ubuntu 18.04.* (* meaning any version you want, I happen to have used .6) LTS (LTS meaning Lite Server edition) typed the following commands in, pressing the enter key after each one, once logged into the desired user in which I plan to build the package:
+- `cd ~` or `cd`
+- `sudo apt-get install python3.8 pip3 zip make build-essential git`
+- `git clone https://github.com/rvnminers-A-and-N/ipfs-video-kodi.git`
+- `cd ~/ipfs-video-kodi` or `cd ipfs-video-kodi`
+- `pip3 install poetry setuptools_rust`
+- `pip3 install --upgrade pip`
 - `make package`
-- Copy the `build/plugin_video_ipfs.zip`
+- `cd ~/ipfs-video-kodi/build` or `cd build`
 
-The main branch in github is _not_ installable as a kodi package, please use the [zip from the releases](https://github.com/bneijt/ipfs-video-kodi/releases) if you want to install a zip directly from github.
+If you wish to make a new user account for this you can do the following from your general user account on the given version of Ubuntu:
+-`sudo adduser inser_your_new_username_here`
+-`sudo usermod -aG sudo insert_the_new_username_from_above_here`
+
+This will allow you to make the user, and give it sudo permissions upon password entry; from there, you can follow the rest of the command instructions as listed above in the start of this section!
+
+Finally, from here (`~/ipfs-video-kodi/build/`), one can copy the `plugin_video_ipfs.zip` file (within the `~/ipfs-video-kodi/build/` path) to wherever you plan to access it from using the file searcher from the section within Kodi to add in add-ons by ZIP file, and you are good to go! This method can be used to make your own necessary changes to the scripts seen here; for example adding your own IPFS host like I am doing with Crypticwizardry!
+
+The reasoning behind this is that the main branch in github is _not_ installable as a kodi package, please use the [zip from the releases](https://github.com/bneijt/ipfs-video-kodi/releases) if you want to install a zip directly from github. I will add some to this git soon with updates!
 
 # Viewing your own content
 
