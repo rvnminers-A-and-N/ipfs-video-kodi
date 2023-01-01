@@ -1,4 +1,4 @@
-# IPFS video plugin for Kodi  ***Crypticwizardry Kubo IPFS/IPNS added, IPLD support coming soon, need to configure Crypticwizardry IPFS API to support this application, otherwise working!***
+# IPFS video plugin for Kodi  - ***Crypticwizardry Kubo IPFS/IPNS added, IPLD support coming soon, need to configure Crypticwizardry IPFS API to support this application, otherwise working!***
 
 Plugin to browse and play video media from IPFS.
 
